@@ -1,0 +1,19 @@
+{
+    "name": "mateusz/task",
+    "type": "project",
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "classmap": [
+            "src/"
+        ]
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "mp371366",
+            "email": "mp371366@github.com"
+        }
+    ]
+}

@@ -1,0 +1,53 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  font-family: sans-serif;
+  text-align: left;
+}
+
+header>h1 {
+  margin: 0;
+}
+
+table {
+  margin: auto;
+  border-collapse: collapse;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}
+
+table.users>tbody>tr:hover {
+  cursor: pointer;
+  background-color: gray;
+}
+
+table.user {
+  max-width: 90%;
+}
+
+div.users {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input#title,
+textarea#body {
+  width: calc(100% - 16px);
+  margin: 5px;
+}
+
+textarea#body {
+  height: 60px;
+}
+
+table.user>tbody>tr>td.add:hover {
+  cursor: pointer;
+}
