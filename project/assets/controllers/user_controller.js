@@ -1,5 +1,6 @@
 import { Controller } from '@hotwired/stimulus';
 import { get, post } from '../api/api.js';
+import policy from '../utils/utils.js';
 
 export default class extends Controller {
   static values = {
@@ -15,8 +16,8 @@ export default class extends Controller {
         <tbody>
           ${posts.map(({ title, body }) => `
             <tr>
-              <td>${title}</td>
-              <td>${body}</td>
+              <td>${policy.createHTML(title)}</td>
+              <td>${policy.createHTML(body)}</td>
             </tr>
           `).join('')}
           <tr>
