@@ -15,6 +15,7 @@ Komenda `./vendor/bin/phpunit --bootstrap src/pesel.php tests` uruchamia testy j
 ## Zadanie 3
 Katalog `project` zawiera implementację zadania 3.
 Przenieś się do katalogu `project` z linii poleceń wpisując polecenie `cd project`.
-Zainstaluj potrzebne pakiety poleceniem `composer install`.
+Zainstaluj potrzebne pakiety poleceniami `composer install` oraz `npm install`.
+Zbuduj potrzebne pakiety poleceniem `npm run dev`.
 Uruchom serwer poleceniem `symfony server:start`.
 Przejdź do witryny `https://127.0.0.1:8000`.

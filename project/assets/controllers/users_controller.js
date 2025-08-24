@@ -1,6 +1,5 @@
 import { Controller } from '@hotwired/stimulus';
 import { get } from '../api/api.js';
-import policy from '../utils/utils.js';
 
 export default class extends Controller {
   connect() {
