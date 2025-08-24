@@ -26,7 +26,7 @@ export default class extends Controller {
             <td>${status}</td>
           </tr>
         `).join('');
-      this.element.querySelector('tbody').innerHTML = tableBody;
+      this.element.querySelector('tbody').innerHTML = policy.createHTML(tableBody);
     }
 
     get('https://gorest.co.in/public/v2/users')

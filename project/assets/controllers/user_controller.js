@@ -11,7 +11,7 @@ export default class extends Controller {
     let posts = [];
 
     const showPosts = () => {
-      this.element.innerHTML = `<table class="user">
+      this.element.innerHTML = policy.createHTML(`<table class="user">
         <caption>Posts</caption>
         <tbody>
           ${posts.map(({ title, body }) => `
@@ -26,7 +26,8 @@ export default class extends Controller {
             <td class="add">Add</td>
           </tr>
         </tbody>
-      </table>`;
+      </table>`
+      );
       this.element.querySelector('td.add').onclick = handleClick;
     };
 
